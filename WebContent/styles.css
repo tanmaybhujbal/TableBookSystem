@@ -1,0 +1,59 @@
+@charset "ISO-8859-1";
+
+/*body {
+    background-color: powderblue;
+}*/
+.bgimg1 {
+            background-image: url("image/img1.jpg");
+		    height: 100%;
+			opacity : 1;
+}
+
+.bgimg1 { 
+            background-size:     cover;                     
+		    background-repeat:   no-repeat;
+		    background-position: center;
+		    position : relative ;   
+			
+}
+.caption {
+	position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+	opacity : 0.75;
+}
+
+.caption span.border {
+	background-color: #e1b751;
+    color:  #7b003a;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+body, html {
+	height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.login{
+	position : absolute:
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    padding-top : 500px;
+}
+
+input[type=text], input[type=password],input[type=email] {
+    width: 20%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

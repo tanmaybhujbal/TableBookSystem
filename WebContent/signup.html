@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="lstyle.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="form_div">
+	<p class="form_label">Sign Up</p>
+	<form name="myform"action="signup.jsp" method="post" onsubmit="validateform()">
+<!--<p><input type="text" placeholder="Name"name="name" /></p>-->
+	<p><input type="text" placeholder="email"name="email" /></p>
+<!-- <p><input type="text" placeholder="Username"name="usr" /></p>-->
+	<p><input type="password"placeholder="Password" name="pwd" /></p>
+	<p><input type="password"placeholder="Repeat Password" name="rpwd" /></p>
+	<p><input type="submit" value="Register" /></p>
+	</form>
+	
+	<script type="text/javascript">
+	function validateform(){  
+		var name=document.myform.usr.value;  
+		var password=document.myform.pwd.value; 
+		var rep_password=document.myform.rpwd.value;
+		  
+		if (name==null || name==""){  
+		  alert("Name can't be blank");  
+		  return false;  
+		}else if(password.length<6){  
+		  alert("Password must be at least 6 characters long.");  
+		  return false;  
+		  }  
+		else if(password!=rep_password){  
+			  alert("Password not matching.");  
+			  return false;  
+			  }  
+		}  
+	</script>
+</body>
+</html>
